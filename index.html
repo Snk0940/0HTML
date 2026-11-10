@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puslapio pavadinimas</title>
+
+    <!-- Google Fonts (jei reikia) – įklijuok čia nuorodą iš fonts.google.com -->
+
+    <!-- CSS failas -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER: logotipas + meniu ===== -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">Logo</a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Pradžia</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Apie</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Paslaugos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN: pagrindinis turinys (tik vienas puslapyje) ===== -->
+    <main>
+
+        <!-- Hero / pirma sekcija -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Pagrindinė antraštė</h1>
+                <p class="hero__text">Trumpas aprašymas.</p>
+                <a href="#" class="hero__button">Mygtukas</a>
+            </div>
+        </section>
+
+        <!-- Sekcija su kortelėmis -->
+        <section class="cards">
+            <div class="container">
+                <h2 class="cards__title">Sekcijos antraštė</h2>
+
+                <div class="cards__list">
+                    <article class="card">
+                        <img src="img/foto.jpg" alt="Aprašymas" class="card__img">
+                        <h3 class="card__title">Kortelės antraštė</h3>
+                        <p class="card__text">Kortelės tekstas.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/foto.jpg" alt="Aprašymas" class="card__img">
+                        <h3 class="card__title">Kortelės antraštė</h3>
+                        <p class="card__text">Kortelės tekstas.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/foto.jpg" alt="Aprašymas" class="card__img">
+                        <h3 class="card__title">Kortelės antraštė</h3>
+                        <p class="card__text">Kortelės tekstas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcija su forma -->
+        <section class="contact">
+            <div class="container">
+                <h2 class="contact__title">Kontaktai</h2>
+
+                <form action="#" method="post" class="form">
+                    <label for="name" class="form__label">Vardas</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+
+                    <label for="email" class="form__label">El. paštas</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+
+                    <label for="message" class="form__label">Žinutė</label>
+                    <textarea id="message" name="message" rows="4" class="form__input"></textarea>
+
+                    <button type="submit" class="form__button">Siųsti</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER: puslapio apačia ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text"><small>&copy; 2026 Visos teisės saugomos</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>

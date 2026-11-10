@@ -1,0 +1,191 @@
+/* ---Bendras stilius--- */
+
+* {
+    box-sizing: border-box;
+}
+
+:root { 
+    --main-color: rgb(243, 133, 59);
+    --main-hover: rgb(115, 115, 223);
+}
+
+.container { 
+    max-width: 80rem;
+    min-width: 40rem;
+    margin-inline: auto;
+    font-family: "Roboto", sans-serif, arial;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Carter One", system-ui, arial;
+}
+
+img {
+    width: 100%;
+}
+
+main { 
+    padding-inline: 3rem;
+}
+/* ---Header stilius--- */
+
+header { 
+    height: 20rem;
+    padding-bottom: 3rem;
+    background-image: url("../images/Backimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem 1rem 3rem;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    font-size: 0.75rem;
+}
+
+h1 { 
+    color: white;
+}
+
+.hero {
+    width: 90%;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+main form { 
+    margin: 1rem;
+}
+
+span { 
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+input { 
+    width: 50%;
+}
+
+[type="submit"] { 
+    color: white;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    
+}
+
+/* ---delivery section--- */
+
+#delivery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.delivery-option { 
+    width: 40%;
+    position: relative;
+    top: -2rem;
+}
+
+#delivery h3 { 
+    color: var(--main-color);
+}
+
+@media (max-width: 50rem) { 
+    #delivery { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .delivery-option { 
+        width: 80%;
+    }
+}
+
+/* ---services section--- */
+
+#services { 
+    text-align: center;
+    background-color: azure;
+    padding: 1rem;
+}
+
+
+.offer { 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.offer article {
+    width: 30%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem ;
+}
+
+@media (max-width: 50rem) { 
+    .offer { 
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer article { 
+        width: 80%;
+    }
+}
+
+/* ---why us section--- */
+
+#why-us img { 
+    width: 40%;
+    padding: 2rem;
+}
+
+#why-us { 
+    display: flex;
+}
+
+#why-us ul li { 
+    list-style-type: none;
+}
+
+#why-us ul li::before { 
+    content: "⨈";
+}
+
+@media (max-width: 50rem) { 
+    #why-us { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #why-us img { 
+        width: 80%;
+    }
+}
+
+/* ---footer--- */
+
+footer { 
+    text-align: center;
+    background-color: rgb(42, 56, 54);
+    color: white;
+    width: 100%;
+    height: 4rem;
+    align-content: center;
+    margin: 0;
+}
